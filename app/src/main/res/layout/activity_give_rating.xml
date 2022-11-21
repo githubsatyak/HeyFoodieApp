@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Give_Rating"
+    android:id="@+id/rating"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    android:gravity ="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Your Rating"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/akronim">
+
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/rBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:theme="@style/Widget.AppCompat.RatingBar"
+        android:background="@color/yellow"
+        android:numStars="5"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/submit_button"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn2_bg"
+        android:text="Submit Rating" />
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="3dp"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/birirani"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="#0CCFF000"
+                android:src="@drawable/biryani" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:background="#0CCFF000"
+                android:fontFamily="@font/akronim"
+                android:text="biriyani"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pizza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/birirani"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:background="#0CCFF000"
+                android:src="@drawable/pizzas"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp"
+                android:background="#0CCFF000"
+                android:fontFamily="@font/akronim"
+                android:text="Pizzas"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/ice_creams"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/pizza"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:background="#0CCFF000"
+                android:src="@drawable/icecream"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="470dp"
+                android:background="#0CCFF000"
+                android:fontFamily="@font/akronim"
+                android:text="IceCreams"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/roti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ice_creams"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:background="#0CCFF000"
+                android:src="@drawable/roti"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="700dp"
+                android:background="#0CCFF000"
+                android:fontFamily="@font/akronim"
+                android:text="Roti"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:backgroundTint="@color/yellow"
+        android:foreground="@drawable/ic_baseline_shopping_cart_24"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
