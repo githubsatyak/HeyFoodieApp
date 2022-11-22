@@ -17,6 +17,7 @@ class SplashActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_splash)
+        supportActionBar?.hide()
 
         Handler(Looper.myLooper()!!).postDelayed({
              startActivity(Intent(this,OpenActivity ::class.java))
